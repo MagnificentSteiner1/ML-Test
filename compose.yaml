@@ -1,0 +1,19 @@
+
+services:
+
+  ml:
+    build: ./ML
+    ports:
+      - "5000:5000"
+
+  data:
+    image: postgres:15
+
+
+  api:
+    build: ./API
+    ports:
+    - "8000:8000"
+    depends_on:
+      - ml
+      - data
