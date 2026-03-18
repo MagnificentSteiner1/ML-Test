@@ -12,6 +12,6 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key: ${{ secrets.ML_TEST_SECRET_2 }}
+          key: ${{ secrets.EC2_SSH }}
           port: 22
           script: echo "SSH connection works!"
