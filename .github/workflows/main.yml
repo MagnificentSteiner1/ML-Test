@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           port: 22
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.ML_TEST_SECRET_2 }}
+          key: ${{ secrets.EC2_SSH }}
           script: |
             cd ML-Test
             git pull origin main
